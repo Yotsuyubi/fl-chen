@@ -30,6 +30,10 @@ export default {
     this.update()
   },
 
+  beforeDestroy() {
+    console.error('emit');
+  },
+
   methods: {
     initCanvas: function() {
       const canvas = document.getElementById("canvas")
